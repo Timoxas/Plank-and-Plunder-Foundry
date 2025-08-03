@@ -2,25 +2,17 @@
   "id": "plank-and-plunder",
   "title": "Plank and Plunder",
   "description": "Lobby & Spielstart für Plank-and-Plunder Würfelspiel",
-<<<<<<< HEAD
   "version": "1.0.1",
-=======
-  "version": "1.0.0",
->>>>>>> ae6974a2f8cdf422f1edd16a72290b3effc30e11
   "author": "Timo",
-
   "minimumCoreVersion": "13",
   "compatibleCoreVersion": "13",
-
   "scripts": [
     "scripts/game.js"
   ],
   "templates": [
     "templates/lobby.html"
   ],
-
   "manifest": "https://raw.githubusercontent.com/Timoxas/Plank-and-Plunder-Foundry/main/module.json",
   "download": "https://github.com/Timoxas/Plank-and-Plunder-Foundry/archive/refs/heads/main.zip",
-
   "library": false
 }
