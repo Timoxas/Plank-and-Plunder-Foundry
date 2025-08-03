@@ -1,7 +1,7 @@
 {
   "id": "plank-and-plunder",
   "title": "Plank and Plunder",
-  "description": "Lobby & Spielstart für Plank‑and‑Plunder Würfelspiel",
+  "description": "Lobby & Spielstart für Plank-and-Plunder Würfelspiel",
   "version": "1.0.0",
   "author": "Timo",
   "minimumCoreVersion": "13",
@@ -12,9 +12,10 @@
   "templates": [
     "templates/lobby.html"
   ],
-  "esmodules": [],
-  "styles": [],
-  "packs": [],
-  "languages": [],
-  "socket": false
+
+  /* ── WICHTIG: Manifest- und Download-URL ── */
+  "manifest": "https://raw.githubusercontent.com/DEINUSERNAME/Plank-and-Plunder-Foundry/main/module.json",
+  "download": "https://github.com/DEINUSERNAME/Plank-and-Plunder-Foundry/archive/refs/heads/main.zip",
+
+  "library": false
 }
