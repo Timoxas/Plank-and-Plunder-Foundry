@@ -1,0 +1,20 @@
+{
+  "id": "plank-and-plunder",
+  "title": "Plank and Plunder",
+  "description": "Lobby & Spielstart für Plank‑and‑Plunder Würfelspiel",
+  "version": "1.0.0",
+  "author": "Timo",
+  "minimumCoreVersion": "13",
+  "compatibleCoreVersion": "13",
+  "scripts": [
+    "scripts/game.js"
+  ],
+  "templates": [
+    "templates/lobby.html"
+  ],
+  "esmodules": [],
+  "styles": [],
+  "packs": [],
+  "languages": [],
+  "socket": false
+}

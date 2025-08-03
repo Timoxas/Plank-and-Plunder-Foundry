@@ -1,0 +1,9 @@
+<p><strong>Spielerlobby:</strong></p>
+{{#if users.length}}
+  <ul>{{#each users}}<li>{{this}}</li>{{/each}}</ul>
+{{else}}
+  <p><em>Keine Spieler in der Lobby.</em></p>
+{{/if}}
+<p><strong>Host:</strong> {{host}}</p>
+{{#if isHost}}<p><em>Du bist der Host.</em></p>{{/if}}
+<p><small>2–4 Spieler starten das Spiel.</small></p>
