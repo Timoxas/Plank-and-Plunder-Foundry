@@ -1,0 +1,31 @@
+<div class="plunder-dialog">
+  <h3>Plündern!</h3>
+  <p>Du hast mindestens eine&nbsp;6 gewürfelt.<br>
+     Wähle einen Mitspieler und einen deiner Würfel, den du tauschen willst.</p>
+
+  <form>
+    <div class="form-group">
+      <label>Mitspieler:</label>
+      <select name="target">
+        {{#each targets}}
+          <option value="{{id}}">{{name}}</option>
+        {{/each}}
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Eigener Würfel (Index 1–5):</label>
+      <input type="number" name="ownIndex" min="1" max="5" value="1">
+    </div>
+
+    <div class="form-group">
+      <label>Fremder Würfel (Index 1–5):</label>
+      <input type="number" name="targetIndex" min="1" max="5" value="1">
+    </div>
+  </form>
+
+  <div class="flexrow" style="gap:0.5rem; margin-top:0.5rem">
+    <button data-action="confirm">Tauschen</button>
+    <button data-action="skip">Überspringen</button>
+  </div>
+</div>

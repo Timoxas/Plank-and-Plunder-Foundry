@@ -1,0 +1,28 @@
+<div class="plunder-lobby">
+  <h2>Plank & Plunder–Lobby</h2>
+
+  <p><b>Host:</b> {{host}}</p>
+
+  <p><b>Teilnehmer:</b></p>
+  <ul>
+    {{#each users}}
+      <li>{{this}}</li>
+    {{/each}}
+  </ul>
+
+  {{#if myTurn}}
+    <p><em>Du bist Host – du kannst das Spiel starten.</em></p>
+  {{/if}}
+
+  <div class="buttons flexrow">
+    {{#if joined}}
+      <button data-action="leave">{{localize "PLUNDER.leave"}}</button>
+    {{else}}
+      <button data-action="join">{{localize "PLUNDER.join"}}</button>
+    {{/if}}
+
+    {{#if myTurn}}
+      <button data-action="start">{{localize "PLUNDER.start"}}</button>
+    {{/if}}
+  </div>
+</div>
